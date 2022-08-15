@@ -1,4 +1,4 @@
-export const getData = async (utl: string) => {
+export const getData = async <T>(utl: string): Promise<T> => {
     const response = await fetch(utl);
     return await response.json();
 }
